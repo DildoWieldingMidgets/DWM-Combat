@@ -1,2 +1,4 @@
-DWM-Combat
-==========
+DWM-Core
+========
+
+Dildo Wielding Midgets Core
