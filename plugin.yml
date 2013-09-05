@@ -1,5 +1,5 @@
-name: Ttor-Core
-main: com.runebrire.core.Core
+name: Ttor-Combat
+main: com.runebrire.combat.Combat
 version: 1.0
 author: DuelWieldMidgets
-description: Core plugin to hook all others together
+description: Combat plugin
