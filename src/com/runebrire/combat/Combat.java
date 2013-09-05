@@ -10,6 +10,8 @@ public class Combat extends JavaPlugin implements Listener {
 		private Combat plugin = this;
 		
 		public void onEnable(){
+			
+			
 			core = (com.runebrire.core.Core) getServer().getPluginManager().getPlugin("Ttor-Core");
 			core.registerSubPlugin("Ttor-Combat", plugin);
 			
@@ -20,6 +22,8 @@ public class Combat extends JavaPlugin implements Listener {
 		public void onDisable(){
 			
 		}
+		
+		
 	
 	
 }
