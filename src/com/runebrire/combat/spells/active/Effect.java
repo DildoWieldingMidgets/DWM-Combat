@@ -17,12 +17,5 @@ public class Effect {
 	public EffectCause getEffectCause(){
 		return cause;
 	}
-	
-	public void effectStart(){
-		
-	}
-	
-	public void effectStop(){
-		
-	}
+
 }

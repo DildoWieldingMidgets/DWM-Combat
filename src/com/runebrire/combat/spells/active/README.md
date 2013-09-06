@@ -1,1 +1,0 @@
-race attributes or whatever + race selection
