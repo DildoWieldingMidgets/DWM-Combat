@@ -17,10 +17,27 @@ public class ActiveEffects {
 		}
 	}
 	
+	public void setOnFire(Player target, int intensity){
+		
+	}
 	
+	public void drop(Player target, int dropHeight){
+		
+	}
 	
+	public void bury(Player target){
+		
+	}
 	
+	public void drown(Player target){
+		
+	}
 	
+	public void slow(Player target){
+		
+	}
 	
-	
+	public void poison(Player target){
+		
+	}
 }
