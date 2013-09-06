@@ -55,4 +55,20 @@ public class ActiveEffects {
 	public void invisible(Player target, int duration){
 		target.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, duration, 3));
 	}
+	
+	public void jump(Player target, int duration){
+		target.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, duration, 3));
+	}
+	
+	public void blind(Player target, int duration){
+		target.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, duration, 3));
+	}
+	
+	public void increaseDamage(Player target, int duration){
+		target.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, duration, 3));
+	}
+	
+	public void decreaseDamage(Player target, int duration){
+		target.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, duration, 3));
+	}
 }
