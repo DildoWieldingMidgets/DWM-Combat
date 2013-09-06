@@ -1,6 +1,9 @@
 package com.runebrire.combat.spells.active;
 
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 
 public class ActiveEffects {
 	
@@ -17,27 +20,15 @@ public class ActiveEffects {
 		}
 	}
 	
-	public void setOnFire(Player target, int intensity){
-		
+	public void setOnFire(Player target, int duration){
+		target.setFireTicks(duration);
 	}
 	
-	public void drop(Player target, int dropHeight){
-		
+	public void slow(Player target, int duration){
+		target.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, duration, 3));
 	}
 	
-	public void bury(Player target){
-		
-	}
-	
-	public void drown(Player target){
-		
-	}
-	
-	public void slow(Player target){
-		
-	}
-	
-	public void poison(Player target){
-		
+	public void poison(Player target, int duration){
+		target.addPotionEffect(new PotionEffect(PotionEffectType.POISON, duration, 3));
 	}
 }
