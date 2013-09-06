@@ -1,4 +1,5 @@
-package com.runebrire.combat.spells;
+package com.runebrire.combat.spells.active;
+
 
 public class Effect {
 	private EffectCause cause;

@@ -1,4 +1,4 @@
-package com.runebrire.combat.spells;
+package com.runebrire.combat.spells.active;
 
 public enum EffectCause {
 	PLAYER,ENVIRONMENT,OTHER;
