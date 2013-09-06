@@ -24,11 +24,44 @@ public class ActiveEffects {
 		target.setFireTicks(duration);
 	}
 	
-	public void slow(Player target, int duration){
-		target.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, duration, 3));
+	public void potionEffect(Player target, int duration, PotionEffectType effect, int strength){
+		target.addPotionEffect(new PotionEffect(effect, duration, strength));
 	}
 	
-	public void poison(Player target, int duration){
-		target.addPotionEffect(new PotionEffect(PotionEffectType.POISON, duration, 3));
+	public void teleport(Player target){
+		//edit
 	}
+	
+	public void freeze(Player target){
+		target.setWalkSpeed(0);
+	}
+	
+	public void heal(Player target, double healed){
+		if(target.getMaxHealth() >= (target.getHealth() + healed)){
+			target.setHealth(target.getHealth() + healed);
+		}else if (target.getMaxHealth() < (target.getHealth() + healed)){w
+			target.setHealth(target.getMaxHealth());
+		}
+	}
+
+	public void decreaseEnergy(Player target, int amount){
+		//edit
+	}
+	
+	public void increaseEnergy(Player target, int amount){
+		//edit
+	}
+	
+	public void plusMaxHealth(Player target, int amount){
+		//edit
+	}
+	
+	
+
+
+
+
+
 }
+	
+		
