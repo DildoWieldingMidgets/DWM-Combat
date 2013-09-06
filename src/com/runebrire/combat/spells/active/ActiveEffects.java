@@ -32,7 +32,6 @@ public class ActiveEffects {
 		//edit
 	}
 	
-<<<<<<< HEAD
 	public void freeze(Player target){
 		target.setWalkSpeed(0);
 	}
@@ -56,54 +55,7 @@ public class ActiveEffects {
 	public void plusMaxHealth(Player target, int amount){
 		//edit
 	}
-	
-	
 
-
-
-
-
-=======
-	public void speed(Player target, int duration){
-		target.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, duration, 3));
-	}
-	
-	public void nightVision(Player target, int duration){
-		target.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, duration, 3));
-	}
-	
-	public void regeneration(Player target, int duration){
-		target.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, duration, 3));
-	}
-	
-	public void confusion(Player target, int duration){
-		target.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, duration, 3));
-	}
-	
-	public void hunger(Player target, int duration){
-		target.addPotionEffect(new PotionEffect(PotionEffectType.HUNGER, duration, 3));
-	}
-	
-	public void invisible(Player target, int duration){
-		target.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, duration, 3));
-	}
-	
-	public void jump(Player target, int duration){
-		target.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, duration, 3));
-	}
-	
-	public void blind(Player target, int duration){
-		target.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, duration, 3));
-	}
-	
-	public void increaseDamage(Player target, int duration){
-		target.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, duration, 3));
-	}
-	
-	public void decreaseDamage(Player target, int duration){
-		target.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, duration, 3));
-	}
->>>>>>> a95cddfd09371a100a3de4c62c500e35ee0a84e0
 }
 	
 		
