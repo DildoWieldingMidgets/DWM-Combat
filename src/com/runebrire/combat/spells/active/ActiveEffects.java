@@ -24,7 +24,7 @@ public class ActiveEffects {
 		target.setFireTicks(duration);
 	}
 	
-	public void potionEffect(Player target, int duration, PotionEffectType effect, int strength){
+	public void addPotionEffect(Player target, int duration, PotionEffectType effect, int strength){
 		target.addPotionEffect(new PotionEffect(effect, duration, strength));
 	}
 	
@@ -39,7 +39,7 @@ public class ActiveEffects {
 	public void heal(Player target, double healed){
 		if(target.getMaxHealth() >= (target.getHealth() + healed)){
 			target.setHealth(target.getHealth() + healed);
-		}else if (target.getMaxHealth() < (target.getHealth() + healed)){w
+		}else if (target.getMaxHealth() < (target.getHealth() + healed)){
 			target.setHealth(target.getMaxHealth());
 		}
 	}
@@ -55,7 +55,43 @@ public class ActiveEffects {
 	public void plusMaxHealth(Player target, int amount){
 		//edit
 	}
-
+	
+	public void minusMaxHealth(Player target, int amount){
+		//edit
+	}
+	
+	public void damageReduction(Player target, int precent, double damageTaken){
+		//edit
+	}
+	
+	public void disableCasting(Player target, int duration, int tier){
+		//edit
+	}
+	
+	public void increaseAttribute(Player target, int duration, int amount, String attribute){
+		//edit
+	}
+	
+	public void decreaseAttribute(Player target, int duration, int amount, String attribute){
+		//edit
+	}
+	
+	public void fasterCooldowns(Player target, int duration, int percent){
+		//edit
+	}
+	
+	public void slowerCooldowns(Player target, int duration, int percent){
+		//edit
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 	
 		

@@ -2,4 +2,9 @@ name: Ttor-Combat
 main: com.runebrire.combat.Combat
 version: 1.0
 author: DuelWieldMidgets
+depend: [Ttor-Core]
 description: Combat plugin
+commands:
+  testie:
+    usage: derp
+    description: herp
