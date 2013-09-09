@@ -53,107 +53,158 @@ public class CmbtPlayer {
 		this.playerName = playerName;
 	}
 	
-	public Player getPlayer(){
+	public Player getPlayer()
+	{
 		return this.player;
 	}
 	
-	public String getPlayerName(){
+	
+	public String getPlayerName()
+	{
 		return this.playerName;
 	}
 	
-	public int getPlayerXP(){
+	
+	public int getPlayerXP()
+	{
 		return this.playerXP;
 	}
 	
-	public void setPlayerXP(int xp){
+	
+	public void setPlayerXP(int xp)
+	{
 		this.playerXP = xp;
 	}
 	
-	public void addPlayerXP(int xp){
+	
+	public void addPlayerXP(int xp)
+	{
 		this.playerXP = this.playerXP + xp;
 	}
 	
-	public int getPlayerLevel(){
+	
+	public int getPlayerLevel()
+	{
 		return this.playerLevel;
 	}
 	
-	public void setPlayerLevel(int level){
+	
+	public void setPlayerLevel(int level)
+	{
 		this.playerLevel = level;
 	}
 	
-	public void addPlayerLevel(int level){
+	
+	public void addPlayerLevel(int level)
+	{
 		this.playerLevel = this.playerLevel + level;
 	}
 	
-	public String getRace(){
+	
+	public String getRace()
+	{
 		return this.race;
 	}
 	
-	public void setRace(String race){
+	
+	public void setRace(String race)
+	{
 		this.race = race;
 	}
 	
-	public int getHealth(){
+	
+	public int getHealth()
+	{
 		return this.health;
 	}
 	
-	public void setHealth(int health){
+	
+	public void setHealth(int health)
+	{
 		this.health = health;
 	}
 	
-	public void addHealth(int health){
+	
+	public void addHealth(int health)
+	{
 		this.health = this.health + health;
 	}
 	
-	public int getMaxHealth(){
+	
+	public int getMaxHealth()
+	{
 		return this.max_health;
 	}
 	
-	public void setMaxHealth(int health){
+	
+	public void setMaxHealth(int health)
+	{
 		this.max_health = health;
 	}
 	
-	public void addMaxHealth(int health){
+	
+	public void addMaxHealth(int health)
+	{
 		this.max_health = this.max_health + health;
 	}
 	
-	public int getEnergy(){
+	
+	public int getEnergy()
+	{
 		return this.energy;
 	}
 	
-	public void setEnergy(int energy){
+	
+	public void setEnergy(int energy)
+	{
 		this.energy = energy;
 	}
 	
-	public void addEnergy(int energy){
+	
+	public void addEnergy(int energy)
+	{
 		this.energy = this.energy + energy;
 	}
 	
-	public int getMaxEnergy(){
+	
+	public int getMaxEnergy()
+	{
 		return this.max_energy;
 	}
 	
-	public void setMaxEnergy(int energy){
+	
+	public void setMaxEnergy(int energy)
+	{
 		this.energy = energy;
 	}
 	
-	public void addMaxEnergy(int energy){
+	
+	public void addMaxEnergy(int energy)
+	{
 		this.energy = this.energy + energy;
 	}
 	
-	public Integer getAttrLevel(String attribute){
+	
+	public Integer getAttrLevel(String attribute)
+	{
 		return this.attributes.get(attribute);
 	}
 	
-	public void setAttrLevel(String attribute, Integer level){
-		if(this.attributes.containsKey(attribute)){
+	
+	public void setAttrLevel(String attribute, Integer level)
+	{
+		if(this.attributes.containsKey(attribute))
+		{
 			this.attributes.remove(attribute);
 			this.attributes.put(attribute, level);
 		}
 	}
 	
-	public void addAttrLevel(String attribute, Integer level){
-		if(this.attributes.containsKey(attribute)){
+	
+	public void addAttrLevel(String attribute, Integer level)
+	{
+		if(this.attributes.containsKey(attribute))
+		{
 			Integer temp = 0;
 			temp = this.attributes.get(attribute);
 			this.attributes.remove(attribute);
