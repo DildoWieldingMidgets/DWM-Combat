@@ -157,7 +157,7 @@ public class CmbtPlayer {
 			Integer temp = 0;
 			temp = this.attributes.get(attribute);
 			this.attributes.remove(attribute);
-			this.attributes.put(attribute, this.attributes.get(attribute) + level);
+			this.attributes.put(attribute, temp + level);
 		}
 	}
 	
