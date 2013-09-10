@@ -5,6 +5,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
+import com.runebrire.combat.cmbt_player.CmbtPlayer;
+
 public class ActiveEffects {
 	
 	public void damageTarget(Player target, double damage){
@@ -36,7 +38,7 @@ public class ActiveEffects {
 		target.setWalkSpeed(0);
 	}
 	
-	public void heal(Player target, double healed){
+	public void heal(CmbtPlayer target, int healed){
 		if(target.getMaxHealth() >= (target.getHealth() + healed)){
 			target.setHealth(target.getHealth() + healed);
 		}else if (target.getMaxHealth() < (target.getHealth() + healed)){
@@ -44,44 +46,38 @@ public class ActiveEffects {
 		}
 	}
 
-	public void decreaseEnergy(Player target, int amount){
-		//edit
+	public void decreaseEnergy(CmbtPlayer target, int amount){
+		target.addEnergy(0 - amount);
 	}
 	
-	public void increaseEnergy(Player target, int amount){
-		//edit
+	public void increaseEnergy(CmbtPlayer target, int amount){
+		target.addEnergy(amount);
 	}
 	
-	public void plusMaxHealth(Player target, int amount){
-		//edit
+	public void disableCasting(CmbtPlayer target){
+		target.setCasting(false);
 	}
 	
-	public void minusMaxHealth(Player target, int amount){
-		//edit
+	//possible tiered? ^^^ vvv
+	
+	public void enableCasting(CmbtPlayer target){
+		target.setCasting(true);
 	}
 	
-	public void damageReduction(Player target, int precent, double damageTaken){
-		//edit
+	public void increaseAttribute(CmbtPlayer target, int amount, String attribute){
+		target.addAttrLevel(attribute, amount);
 	}
 	
-	public void disableCasting(Player target, int duration, int tier){
-		//edit
+	public void decreaseAttribute(CmbtPlayer target, int amount, String attribute){
+		target.addAttrLevel(attribute, 0 - amount);
 	}
 	
-	public void increaseAttribute(Player target, int duration, int amount, String attribute){
-		//edit
+	public void fasterCooldowns(CmbtPlayer target, int percent){
+		target.setCooldownSpeed(percent);
 	}
 	
-	public void decreaseAttribute(Player target, int duration, int amount, String attribute){
-		//edit
-	}
-	
-	public void fasterCooldowns(Player target, int duration, int percent){
-		//edit
-	}
-	
-	public void slowerCooldowns(Player target, int duration, int percent){
-		//edit
+	public void slowerCooldowns(CmbtPlayer target, int percent){
+		target.setCooldownSpeed(0 - percent);
 	}
 	
 	

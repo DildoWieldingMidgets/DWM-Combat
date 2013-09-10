@@ -18,10 +18,23 @@ public class CmbtPlayer {
 	private int max_health;
 	private int energy;
 	private int max_energy;
+	private boolean casting;
+	private int cooldownSpeed;
+	private int meleeDamage;
+	private int armorPercent;
+	private int magicDamage;
+	private int projectileDamage;
+	
 	
 	private HashMap<String, Integer> attributes = new HashMap<String, Integer>();
 	
 	public CmbtPlayer(String playerName){
+		
+		cooldownSpeed = 100;
+		meleeDamage = 100;
+		armorPercent = 100;
+		magicDamage = 100;
+		projectileDamage = 100;
 		
 		playerLevel = 0;
 		playerXP = 0;
@@ -30,6 +43,7 @@ public class CmbtPlayer {
 		max_health = 100;
 		energy = 70;
 		max_energy = 70;
+		casting = true;
 
 		attributes.put("destruction", 0);
 		attributes.put("summoning", 0);
@@ -52,6 +66,79 @@ public class CmbtPlayer {
 		
 		this.playerName = playerName;
 	}
+	
+	
+	public int getCooldownSpeed()
+	{
+		return this.cooldownSpeed;
+	}
+	
+	
+	public void setCooldownSpeed(int percent)
+	{
+		this.cooldownSpeed = percent;
+	}
+	
+	
+	public int getMeleeDamage()
+	{
+		return this.meleeDamage;
+	}
+	
+	
+	public void setMeleeDamage(int percent)
+	{
+		this.meleeDamage = percent;
+	}
+	
+	
+	public int getArmorPercent()
+	{
+		return this.armorPercent;
+	}
+	
+	
+	public void setArmorPercent(int percent)
+	{
+		this.armorPercent = percent;
+	}
+	
+	
+	public int getMagicDamage()
+	{
+		return this.magicDamage;
+	}
+	
+	
+	public void setMagicDamage(int percent)
+	{
+		this.magicDamage = percent;
+	}
+	
+	
+	public int getProjectileDamage()
+	{
+	return this.projectileDamage;	
+	}
+	
+	
+	public void setProjectileDamage(int percent)
+	{
+		this.projectileDamage = percent;
+	}
+	
+	
+	public boolean getCasting()
+	{
+		return this.casting;
+	}
+	
+	
+	public void setCasting(boolean value)
+	{
+		this.casting = value;
+	}
+	
 	
 	public Player getPlayer()
 	{
