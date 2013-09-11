@@ -7,4 +7,10 @@ description: Combat plugin
 commands:
   testie:
     usage: derp
-    description: herp
+    description: herpdsa
+  mana:
+    usage: derpp
+    description: hdsaerp
+  manaa:
+    usage: derppp
+    description: dherp

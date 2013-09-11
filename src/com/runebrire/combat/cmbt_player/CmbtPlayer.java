@@ -9,6 +9,8 @@ import com.runebrire.combat.Combat;
 public class CmbtPlayer {
 	private Combat plugin;
 	
+	
+	private int energyPFS;
 	private String playerName;
 	private Player player;
 	private int playerXP;
@@ -36,6 +38,7 @@ public class CmbtPlayer {
 		magicDamage = 100;
 		projectileDamage = 100;
 		
+		energyPFS = 1;
 		playerLevel = 0;
 		playerXP = 0;
 		race = null;
@@ -65,6 +68,17 @@ public class CmbtPlayer {
 		attributes.put("fishing", 0);
 		
 		this.playerName = playerName;
+	}
+	
+	public int getEnergyRegen()
+	{
+		return this.energyPFS;
+	}
+	
+	
+	public void setEnergyRegen(int regen)
+	{
+		this.energyPFS = regen;
 	}
 	
 	

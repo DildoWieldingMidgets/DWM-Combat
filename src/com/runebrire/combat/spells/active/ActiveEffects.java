@@ -1,6 +1,5 @@
 package com.runebrire.combat.spells.active;
 
-import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
@@ -79,14 +78,6 @@ public class ActiveEffects {
 	public void slowerCooldowns(CmbtPlayer target, int percent){
 		target.setCooldownSpeed(0 - percent);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }
 	
