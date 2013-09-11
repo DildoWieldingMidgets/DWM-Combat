@@ -1,0 +1,18 @@
+
+			Timer timer = new Timer();
+			timer.schedule(new TimerTask(){
+				@Override
+				public void run() {
+					for(Player p : Bukkit.getServer().getOnlinePlayers() ){
+
+						CmbtPlayer cmbt = players.get(p.getName());
+							if(cmbt.getMaxEnergy() >= (cmbt.getEnergy() + cmbt.getEnergyRegen())){
+								cmbt.setEnergy(cmbt.getEnergy() + cmbt.getEnergyRegen());
+							}else if (cmbt.getMaxEnergy() < (cmbt.getEnergy() + cmbt.getEnergyRegen())){
+								cmbt.setEnergy(cmbt.getMaxEnergy());
+							}
+
+							}
+						}
+				 },9000L,(100L * 5L));
+
